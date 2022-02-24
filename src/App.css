@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+  height: 90vh;
+  min-height: 675px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (min-width: 415px) {
+  .App-header {
+    padding: 0px 16px;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 60px;
+  color: #000000;
+  border-bottom: 1px solid #d3d6da;
+}
+
+.title {
+  font-family: "Artifakt Element";
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+#game {
+  width: 100%;
+  max-width: 500px;
+  min-width: 375px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+#board {
+  width: 350px;
+  height: 420px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+game-row {
+  display: block;
+}
+
+.gameRow{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  height: 62px;
+}
+
+game-tile {
+  display: inline-block;
+}
+
+#tile {
+  border: 2px solid #d3d6da;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: white;
+  text-transform: uppercase;
+  user-select: none;
+  height: 62px;
+}
+
+game-keyboard {
+  height: 200px;
+}
+
+#keyboard {
+  margin: 0 8px;
+  user-select: none;
+}
+
+.keyRow {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  margin: 0 6px 0 0;
+  height: 58px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #d3d6da;
+  color: black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+.spacerHalf {
+  flex: 0.5;
+}
+
+.spacerPlus {
+  flex: 1.5;
+  font-size: 12px;
+}
